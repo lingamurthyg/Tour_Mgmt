@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TourManagement.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7267abe99810fe4ed8aced08ac52bbab409e855")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+795a5c0892478c20109ddd666779390737838643")]
 [assembly: System.Reflection.AssemblyProductAttribute("TourManagement.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TourManagement.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
