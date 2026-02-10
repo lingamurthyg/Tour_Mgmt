@@ -21,6 +21,9 @@ public class TourManagementDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
+        // Set default schema to public (PostgreSQL convention)
+        modelBuilder.HasDefaultSchema("public");
+
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(TourManagementDbContext).Assembly);
     }
 }

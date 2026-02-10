@@ -18,9 +18,10 @@ public static class ServiceCollectionExtensions
     {
         // Register DbContext
         services.AddDbContext<TourManagementDbContext>(options =>
-            options.UseSqlServer(
+            options.UseNpgsql(
                 configuration.GetConnectionString("DefaultConnection"),
-                b => b.MigrationsAssembly(typeof(TourManagementDbContext).Assembly.FullName)));
+                b => b.MigrationsAssembly(typeof(TourManagementDbContext).Assembly.FullName))
+            .UseSnakeCaseNamingConvention());
 
         // Register repositories
         services.AddScoped<ITourRepository, TourRepository>();

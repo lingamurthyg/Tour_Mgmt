@@ -49,7 +49,7 @@ public class TourConfiguration : IEntityTypeConfiguration<Tour>
 
         builder.Property(t => t.CreatedDate)
             .IsRequired()
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("NOW()");
 
         builder.Property(t => t.ModifiedDate);
 
